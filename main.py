@@ -10,6 +10,7 @@ class Gamer():
         self.radar = [["." for _ in range(self.size)] for _ in range(self.size)]
 
     def map_print(self):
+        print("Map:")
         for x in range(-1, self.size):
             for y in range(-1, self.size):
                 if x == -1 and y == -1:
@@ -25,6 +26,7 @@ class Gamer():
             print("")
 
     def radar_print(self):
+        print("Radar:")
         for x in range(-1, self.size):
             for y in range(-1, self.size):
                 if x == -1 and y == -1:
@@ -54,5 +56,4 @@ class Game():
 if __name__ == "__main__":
     a = Gamer()
     a.map_print()
-    print('')
     a.radar_print()
